@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
-df = pd.read_csv('Crop_recommendation.csv')
+df = pd.read_csv('crop_yield_dataset.csv')
 
 X = df.drop('label', axis=1)
 y = df['label']
